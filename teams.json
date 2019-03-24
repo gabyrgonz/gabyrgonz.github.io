@@ -1,0 +1,305 @@
+{
+  "name:": "NBA",
+  "children": [
+    {
+      "name": "ATL",
+      "children": [
+        {"name": "teamId", "value": 1610612737},
+        {"name": "abbreviation", "value": "ATL"},
+        {"name": "teamName", "value": "Atlanta Hawks"},
+        {"name": "simpleName", "value": "Hawks"},
+        {"name": "location", "value": "Atlanta"}
+      ]
+    },
+    {
+      "name": "BOS",
+      "children": [
+        {"name": "teamId", "value": 1610612738},
+        {"name": "abbreviation", "value": "BOS"},
+        {"name": "teamName", "value": "Boston Celtics"},
+        {"name": "simpleName", "value": "Celtics"},
+        {"name": "location", "value": "Boston"}
+      ]
+    },
+    {
+      "name": "BKN",
+      "children": [
+        {"name": "teamId", "value": 1610612751},
+        {"name": "abbreviation", "value": "BKN"},
+        {"name": "teamName", "value": "Brooklyn Nets"},
+        {"name": "simpleName", "value": "Nets"},
+        {"name": "location", "value": "Brooklyn"}
+        ]
+    },
+    {
+      "name": "CHA",
+      "children": [
+        {"name": "teamId", "value": 1610612766},
+        {"name": "abbreviation", "value": "CHA"},
+        {"name": "teamName", "value": "Charlotte Hornets"},
+        {"name": "simpleName", "value": "Hornets"},
+        {"name": "location", "value": "Charlotte"}
+      ]
+    },
+    {
+      "name": "CHI",
+      "children": [
+        {"name": "teamId", "value": 1610612741},
+        {"name": "abbreviation", "value": "CHI"},
+        {"name": "teamName", "value": "Chicago Bulls"},
+        {"name": "simpleName", "value": "Bulls"},
+        {"name": "location", "value": "Chicago"}
+      ]
+    },
+    {
+      "name": "CLE",
+      "children": [
+        {"name": "teamId", "value": 1610612739},
+        {"name": "abbreviation", "value": "CLE"},
+        {"name": "teamName", "value": "Cleveland Cavaliers"},
+        {"name": "simpleName", "value": "Cavaliers"},
+        {"name": "location", "value": "Cleveland"}
+      ]
+    },
+    {
+      "name": "DAL",
+      "children": [
+        {"name": "teamId", "value": 1610612742},
+        {"name": "abbreviation", "value": "DAL"},
+        {"name": "teamName", "value": "Dallas Mavericks"},
+        {"name": "simpleName", "value": "Mavericks"},
+        {"name": "location", "value": "Dallas"}
+      ]
+    },
+    {
+      "name": "DEN",
+      "children": [
+        {"name": "teamId", "value": 1610612743},
+        {"name": "abbreviation", "value": "DEN"},
+        {"name": "teamName", "value": "Denver Nuggets"},
+        {"name": "simpleName", "value": "Nuggets"},
+        {"name": "location", "value": "Denver"}
+      ]
+    },
+    {
+      "name": "DET",
+      "children": [
+        {"name": "teamId", "value": 1610612765},
+        {"name": "abbreviation", "value": "DET"},
+        {"name": "teamName", "value": "Detroit Pistons"},
+        {"name": "simpleName", "value": "Pistons"},
+        {"name": "location", "value": "Detroit"}
+      ]
+    },
+    {
+      "name": "GSW",
+      "children": [
+        {"name": "teamId", "value": 1610612744},
+        {"name": "abbreviation", "value": ""},
+        {"name": "teamName", "value": "Golden State Warriors"},
+        {"name": "simpleName", "value": "Warriors"},
+        {"name": "location", "value": "Golden State"}
+      ]
+    },
+    {
+      "name": "HOU",
+      "children": [
+        {"name": "teamId", "value": 1610612745},
+        {"name": "abbreviation", "value": "HOU"},
+        {"name": "teamName", "value": "Houston Rockets"},
+        {"name": "simpleName", "value": "Rockets"},
+        {"name": "location", "value": "Houston"}
+      ]
+    },
+    {
+      "name": "IND",
+      "children": [
+        {"name": "teamId", "value": 1610612754},
+        {"name": "abbreviation", "value": "IND"},
+        {"name": "teamName", "value": "Indiana Pacers"},
+        {"name": "simpleName", "value": "Pacers"},
+        {"name": "location", "value": "Indiana"}
+      ]
+    },
+    {
+      "name": "LAC",
+      "children": [
+        {"name": "teamId", "value": 1610612746},
+        {"name": "abbreviation", "value": "LAC"},
+        {"name": "teamName", "value": "Los Angeles Clippers"},
+        {"name": "simpleName", "value": "Clippers"},
+        {"name": "location", "value": "Los Angeles"}
+      ]
+    },
+    {
+      "name": "LAL",
+      "children": [
+        {"name": "teamId", "value": 1610612747},
+        {"name": "abbreviation", "value": "LAL"},
+        {"name": "teamName", "value": "Los Angeles Lakers"},
+        {"name": "simpleName", "value": "Lakers"},
+        {"name": "location", "value": "Los Angeles"}
+      ]
+    },
+    {
+      "name": "MEM",
+      "children": [
+        {"name": "teamId", "value": 1610612763},
+        {"name": "abbreviation", "value": "MEM"},
+        {"name": "teamName", "value": "Memphis Grizzlies"},
+        {"name": "simpleName", "value": "Grizzlies"},
+        {"name": "location", "value": "Memphis"}
+      ]
+    },
+    {
+      "name": "MIA",
+      "children": [
+        {"name": "teamId", "value": 1610612748},
+        {"name": "abbreviation", "value": "MIA"},
+        {"name": "teamName", "value": "Miami Heat"},
+        {"name": "simpleName", "value": "Heat"},
+        {"name": "location", "value": "Miami"}
+      ]
+    },
+    {
+      "name": "MIL",
+      "children": [
+        {"name": "teamId", "value": 1610612749},
+        {"name": "abbreviation", "value": "MIL"},
+        {"name": "teamName", "value": "Milwaukee Bucks"},
+        {"name": "simpleName", "value": "Bucks"},
+        {"name": "location", "value": "Milwaukee"}
+      ]
+    },
+    {
+      "name": "MIN",
+      "children": [
+        {"name": "teamId", "value": 1610612750},
+        {"name": "abbreviation", "value": "MIN"},
+        {"name": "teamName", "value": "Minnesota Timberwolves"},
+        {"name": "simpleName", "value": "Timberwolves"},
+        {"name": "location", "value": "Minnesota"}
+      ]
+    },
+    {
+      "name": "NOP",
+      "children": [
+        {"name": "teamId", "value": 1610612740},
+        {"name": "abbreviation", "value": "NOP"},
+        {"name": "teamName", "value": "New Orleans Pelicans"},
+        {"name": "simpleName", "value": "Pelicans"},
+        {"name": "location", "value": "Pelicans"}
+      ]
+    },
+    {
+      "name": "NYK",
+      "children": [
+        {"name": "teamId", "value": 1610612752},
+        {"name": "abbreviation", "value": "NYK"},
+        {"name": "teamName", "value": "New York Knicks"},
+        {"name": "simpleName", "value": "Knicks"},
+        {"name": "location", "value": "New York"}
+      ]
+    },
+    {
+      "name": "OKC",
+      "children": [
+        {"name": "teamId", "value": 1610612760},
+        {"name": "abbreviation", "value": "OKC"},
+        {"name": "teamName", "value": "Oklahoma City Thunder"},
+        {"name": "simpleName", "value": "Thunder"},
+        {"name": "location", "value": "Oklahoma City"}
+      ]
+    },
+    {
+      "name": "ORL",
+      "children": [
+        {"name": "teamId", "value": 1610612753},
+        {"name": "abbreviation", "value": "ORL"},
+        {"name": "teamName", "value": "Orlando Magic"},
+        {"name": "simpleName", "value": "Magic"},
+        {"name": "location", "value": "Orlando"}
+      ]
+    },
+    {
+      "name": "PHI",
+      "children": [
+        {"name": "teamId", "value": 1610612755},
+        {"name": "abbreviation", "value": "PHI"},
+        {"name": "teamName", "value": "Philadelphia 76ers"},
+        {"name": "simpleName", "value": "76ers"},
+        {"name": "location", "value": "Philadelphia"}
+      ]
+    },
+    {
+      "name": "PHX",
+      "children": [
+        {"name": "teamId", "value": 1610612756},
+        {"name": "abbreviation", "value": "PHX"},
+        {"name": "teamName", "value": "Phoenix Suns"},
+        {"name": "simpleName", "value": "Suns"},
+        {"name": "location", "value": "Phoenix"}
+      ]
+    },
+    {
+      "name": "POR",
+      "children": [
+        {"name": "teamId", "value": 1610612757},
+        {"name": "abbreviation", "value": "POR"},
+        {"name": "teamName", "value": "Portland Trail Blazers"},
+        {"name": "simpleName", "value": "Trail Blazers"},
+        {"name": "location", "value": "Portland"}
+      ]
+    },
+    {
+      "name": "SAC",
+      "children": [
+        {"name": "teamId", "value": 1610612758},
+        {"name": "abbreviation", "value": "SAC"},
+        {"name": "teamName", "value": "Sacramento Kings"},
+        {"name": "simpleName", "value": "Kings"},
+        {"name": "location", "value": "Sacramento"}
+      ]
+    },
+    {
+      "name": "SAS",
+      "children": [
+        {"name": "teamId", "value": 1610612759},
+        {"name": "abbreviation", "value": "SAS"},
+        {"name": "teamName", "value": "San Antonio Spurs"},
+        {"name": "simpleName", "value": "Spurs"},
+        {"name": "location", "value": "San Antonio"}
+      ]
+    },
+    {
+      "name": "TOR",
+      "children": [
+        {"name": "teamId", "value": 1610612761},
+        {"name": "abbreviation", "value": "TOR"},
+        {"name": "teamName", "value": "Toronto Raptors"},
+        {"name": "simpleName", "value": "Raptors"},
+        {"name": "location", "value": "Toronto"}
+      ]
+    },
+    {
+      "name": "UTA",
+      "children": [
+        {"name": "teamId", "value": 1610612762},
+        {"name": "abbreviation", "value": "UTA"},
+        {"name": "teamName", "value": "Utah Jazz"},
+        {"name": "simpleName", "value": "Jazz"},
+        {"name": "location", "value": "Utah"}
+      ]
+    },
+    {
+      "name": "WAS",
+      "children": [
+        {"name": "teamId", "value": 1610612764},
+        {"name": "abbreviation", "value": "WAS"},
+        {"name": "teamName", "value": "Washington Wizards"},
+        {"name": "simpleName", "value": "Wizards"},
+        {"name": "location", "value": "Washington"}
+      ]
+    }
+  ]
+}
