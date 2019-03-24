@@ -1,0 +1,83 @@
+{
+  "name": "San Antonio Spurs", "children":
+  [{
+  "name": "2010's",
+  "children":
+  [{"name": "0", "size": 1, "text": "A vignette", "sentiment": 0.3, "source": "newspaper"},
+    {"name": "41", "size": 4.1, "text": "A tall-tale", "sentiment": 0.3, "source": "friend"},
+    {"name": "47", "size": 4.7, "text": "A joke", "sentiment": 0.3, "source": "email"},
+    {"name": "61", "size": 6.1, "text": "A tall-tale", "sentiment": 0.3, "source": "friend"},
+    {"name": "67", "size": 6.7, "text": "A joke", "sentiment": 0.3, "source": "email"},
+
+    {"name": "55", "size": 5.5, "text": "A tall-tale", "sentiment": 0.3, "source": "friend"},
+    {"name": "62", "size": 6.2, "text": "A joke", "sentiment": 0.3, "source": "email"},
+    {"name": "58", "size": 5.8, "text": "A joke", "sentiment": 0.3, "source": "email"},
+    {"name": "50", "size": 5.0, "text": "A tall-tale", "sentiment": 0.3, "source": "friend"},
+    {"name": "61", "size": 6.1, "text": "A joke", "sentiment": 0.3, "source": "email"}]
+}, {
+  "name": "2000's",
+  "children":
+  [{"name": "50", "size": 5.0, "text": "A vignette", "sentiment": 0.5, "source": "newspaper"},
+    {"name": "54", "size": 5.4, "text": "A tall-tale", "sentiment": 0.5, "source": "friend"},
+    {"name": "56", "size": 5.6, "text": "A joke", "sentiment": 0.5, "source": "email"},
+    {"name": "58", "size": 5.8, "text": "A tall-tale", "sentiment": 0.5, "source": "friend"},
+    {"name": "63", "size": 6.3, "text": "A joke", "sentiment": 0.5, "source": "email"},
+
+    {"name": "59", "size": 5.9, "text": "A tall-tale", "sentiment": 0.5, "source": "friend"},
+    {"name": "57", "size": 5.7, "text": "A joke", "sentiment": 0.5, "source": "email"},
+    {"name": "60", "size": 6.0, "text": "A joke", "sentiment": 0.5, "source": "email"},
+    {"name": "58", "size": 5.8, "text": "A tall-tale", "sentiment": 0.5, "source": "friend"},
+    {"name": "58", "size": 5.8, "text": "A joke", "sentiment": 0.5, "source": "email"}]
+}, {
+  "name": "1990's",
+  "children":
+  [{"name": "53", "size": 5.3, "text": "A vignette", "sentiment": 0.7, "source": "newspaper"},
+    {"name": "37", "size": 3.7, "text": "A tall-tale", "sentiment": 0.7, "source": "friend"},
+    {"name": "56", "size": 5.6, "text": "A joke", "sentiment": 0.7, "source": "email"},
+    {"name": "20", "size": 2, "text": "A tall-tale", "sentiment": 0.7, "source": "friend"},
+    {"name": "59", "size": 5.9, "text": "A joke", "sentiment": 0.7, "source": "email"},
+
+    {"name": "62", "size": 6.2, "text": "A tall-tale", "sentiment": 0.7, "source": "friend"},
+    {"name": "55", "size": 5.5, "text": "A joke", "sentiment": 0.7, "source": "email"},
+    {"name": "49", "size": 4.9, "text": "A joke", "sentiment": 0.7, "source": "email"},
+    {"name": "47", "size": 4.7, "text": "A tall-tale", "sentiment": 0.7, "source": "friend"},
+    {"name": "55", "size": 5.5, "text": "A joke", "sentiment": 0.7, "source": "email"}]
+
+},
+  {
+    "name": "1980's",
+    "children":
+    [{"name": "56", "size": 5.6, "text": "A vignette", "sentiment": 0.9, "source": "newspaper"},
+      {"name": "21", "size": 2.1, "text": "A tall-tale", "sentiment": 0.9, "source": "friend"},
+      {"name": "31", "size": 3.1, "text": "A joke", "sentiment": 0.9, "source": "email"},
+      {"name": "28", "size": 2.8, "text": "A tall-tale", "sentiment": 0.9, "source": "friend"},
+      {"name": "35", "size": 3.5, "text": "A joke", "sentiment": 0.9, "source": "email"},
+
+      {"name": "41", "size": 4.1, "text": "A tall-tale", "sentiment": 0.9, "source": "friend"},
+      {"name": "37", "size": 3.7, "text": "A joke", "sentiment": 0.9, "source": "email"},
+      {"name": "53", "size": 5.3, "text": "A joke", "sentiment": 0.9, "source": "email"},
+      {"name": "48", "size": 4.8, "text": "A tall-tale", "sentiment": 0.9, "source": "friend"},
+      {"name": "52", "size": 5.2, "text": "A joke", "sentiment": 0.9, "source": "email"}]
+  }, {
+    "name": "1970's",
+    "children":
+    [{"name": "41", "size": 4.1, "text": "A vignette", "sentiment": 1.2, "source": "newspaper"},
+      {"name": "48", "size": 4.8, "text": "A tall-tale", "sentiment": 1.2, "source": "friend"},
+      {"name": "52", "size": 5.2, "text": "A joke", "sentiment": 1.2, "source": "email"},
+      {"name": "44", "size": 4.4, "text": "A tall-tale", "sentiment": 1.2, "source": "friend"},
+      {"name": "50", "size": 5, "text": "A joke", "sentiment": 1.2, "source": "email"},
+
+      {"name": "51", "size": 5.1, "text": "A tall-tale", "sentiment": 1.2, "source": "friend"},
+      {"name": "45", "size": 4.5, "text": "A joke", "sentiment": 1.2, "source": "email"},
+      {"name": "28", "size": 2.8, "text": "A joke", "sentiment": 1.2, "source": "email"},
+      {"name": "42", "size": 4.2, "text": "A tall-tale", "sentiment": 1.2, "source": "friend"},
+      {"name": "30", "size": 3, "text": "A joke", "sentiment": 1.2, "source": "email"}]
+  }, {
+    "name": "1960's",
+    "children": [{"name": "45", "size": 4.5, "text": "A narrative", "sentiment": 0.3, "source": "newspaper"},
+      {"name": "41", "size": 4.1, "text": "A chronology", "sentiment": 0.3, "source": "email"},
+      {"name": "46", "size": 4.6, "text": "A narrative", "sentiment": 0.3, "source": "newspaper"}]
+
+  }
+]
+}

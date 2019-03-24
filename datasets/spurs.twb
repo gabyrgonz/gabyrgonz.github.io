@@ -1,0 +1,745 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20183.18.1219.1533                               -->
+<workbook original-version='18.1' source-build='2018.3.2 (20183.18.1219.1533)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='spurs-all-stats' inline='true' name='federated.1iyyc061pp3hla1bnek5r0hkgjw7' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='spurs-all-stats' name='textscan.0vamgsg1wwsx5t1amtsao0ro72ob'>
+            <connection class='textscan' directory='/Users/gabyrgonz/Google Drive/w19/cpsc583/project' filename='spurs-all-stats.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0vamgsg1wwsx5t1amtsao0ro72ob' name='spurs-all-stats.csv' table='[spurs-all-stats#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+            <column datatype='string' name='Season' ordinal='0' />
+            <column datatype='string' name='Lg' ordinal='1' />
+            <column datatype='string' name='Tm' ordinal='2' />
+            <column datatype='integer' name='W' ordinal='3' />
+            <column datatype='integer' name='L' ordinal='4' />
+            <column datatype='integer' name='Finish' ordinal='5' />
+            <column datatype='string' name='F7' ordinal='6' />
+            <column datatype='real' name='Age' ordinal='7' />
+            <column datatype='string' name='Ht.' ordinal='8' />
+            <column datatype='integer' name='Wt.' ordinal='9' />
+            <column datatype='string' name='F11' ordinal='10' />
+            <column datatype='integer' name='G' ordinal='11' />
+            <column datatype='integer' name='MP' ordinal='12' />
+            <column datatype='integer' name='FG' ordinal='13' />
+            <column datatype='integer' name='FGA' ordinal='14' />
+            <column datatype='real' name='FG%' ordinal='15' />
+            <column datatype='integer' name='3P' ordinal='16' />
+            <column datatype='integer' name='3PA' ordinal='17' />
+            <column datatype='real' name='3P%' ordinal='18' />
+            <column datatype='integer' name='2P' ordinal='19' />
+            <column datatype='integer' name='2PA' ordinal='20' />
+            <column datatype='real' name='2P%' ordinal='21' />
+            <column datatype='integer' name='FT' ordinal='22' />
+            <column datatype='integer' name='FTA' ordinal='23' />
+            <column datatype='real' name='FT%' ordinal='24' />
+            <column datatype='integer' name='ORB' ordinal='25' />
+            <column datatype='integer' name='DRB' ordinal='26' />
+            <column datatype='integer' name='TRB' ordinal='27' />
+            <column datatype='integer' name='AST' ordinal='28' />
+            <column datatype='integer' name='STL' ordinal='29' />
+            <column datatype='integer' name='BLK' ordinal='30' />
+            <column datatype='integer' name='TOV' ordinal='31' />
+            <column datatype='integer' name='PF' ordinal='32' />
+            <column datatype='integer' name='PTS' ordinal='33' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[spurs-all-stats.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_CA&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Season</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Season]</local-name>
+            <parent-name>[spurs-all-stats.csv]</parent-name>
+            <remote-alias>Season</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lg</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Lg]</local-name>
+            <parent-name>[spurs-all-stats.csv]</parent-name>
+            <remote-alias>Lg</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Tm</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Tm]</local-name>
+            <parent-name>[spurs-all-stats.csv]</parent-name>
+            <remote-alias>Tm</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>W</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[W]</local-name>
+            <parent-name>[spurs-all-stats.csv]</parent-name>
+            <remote-alias>W</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>L</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[L]</local-name>
+            <parent-name>[spurs-all-stats.csv]</parent-name>
+            <remote-alias>L</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Finish</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Finish]</local-name>
+            <parent-name>[spurs-all-stats.csv]</parent-name>
+            <remote-alias>Finish</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F7</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F7]</local-name>
+            <parent-name>[spurs-all-stats.csv]</parent-name>
+            <remote-alias>F7</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Age</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Age]</local-name>
+            <parent-name>[spurs-all-stats.csv]</parent-name>
+            <remote-alias>Age</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Ht.</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Ht.]</local-name>
+            <parent-name>[spurs-all-stats.csv]</parent-name>
+            <remote-alias>Ht.</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Wt.</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Wt.]</local-name>
+            <parent-name>[spurs-all-stats.csv]</parent-name>
+            <remote-alias>Wt.</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F11</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F11]</local-name>
+            <parent-name>[spurs-all-stats.csv]</parent-name>
+            <remote-alias>F11</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>G</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[G]</local-name>
+            <parent-name>[spurs-all-stats.csv]</parent-name>
+            <remote-alias>G</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MP</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[MP]</local-name>
+            <parent-name>[spurs-all-stats.csv]</parent-name>
+            <remote-alias>MP</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FG</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[FG]</local-name>
+            <parent-name>[spurs-all-stats.csv]</parent-name>
+            <remote-alias>FG</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FGA</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[FGA]</local-name>
+            <parent-name>[spurs-all-stats.csv]</parent-name>
+            <remote-alias>FGA</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FG%</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[FG%]</local-name>
+            <parent-name>[spurs-all-stats.csv]</parent-name>
+            <remote-alias>FG%</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>3P</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[3P]</local-name>
+            <parent-name>[spurs-all-stats.csv]</parent-name>
+            <remote-alias>3P</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>3PA</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[3PA]</local-name>
+            <parent-name>[spurs-all-stats.csv]</parent-name>
+            <remote-alias>3PA</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>3P%</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[3P%]</local-name>
+            <parent-name>[spurs-all-stats.csv]</parent-name>
+            <remote-alias>3P%</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>2P</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[2P]</local-name>
+            <parent-name>[spurs-all-stats.csv]</parent-name>
+            <remote-alias>2P</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>2PA</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[2PA]</local-name>
+            <parent-name>[spurs-all-stats.csv]</parent-name>
+            <remote-alias>2PA</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>2P%</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[2P%]</local-name>
+            <parent-name>[spurs-all-stats.csv]</parent-name>
+            <remote-alias>2P%</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FT</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[FT]</local-name>
+            <parent-name>[spurs-all-stats.csv]</parent-name>
+            <remote-alias>FT</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FTA</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[FTA]</local-name>
+            <parent-name>[spurs-all-stats.csv]</parent-name>
+            <remote-alias>FTA</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FT%</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[FT%]</local-name>
+            <parent-name>[spurs-all-stats.csv]</parent-name>
+            <remote-alias>FT%</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ORB</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ORB]</local-name>
+            <parent-name>[spurs-all-stats.csv]</parent-name>
+            <remote-alias>ORB</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DRB</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[DRB]</local-name>
+            <parent-name>[spurs-all-stats.csv]</parent-name>
+            <remote-alias>DRB</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TRB</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TRB]</local-name>
+            <parent-name>[spurs-all-stats.csv]</parent-name>
+            <remote-alias>TRB</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AST</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[AST]</local-name>
+            <parent-name>[spurs-all-stats.csv]</parent-name>
+            <remote-alias>AST</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>STL</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[STL]</local-name>
+            <parent-name>[spurs-all-stats.csv]</parent-name>
+            <remote-alias>STL</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BLK</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[BLK]</local-name>
+            <parent-name>[spurs-all-stats.csv]</parent-name>
+            <remote-alias>BLK</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TOV</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TOV]</local-name>
+            <parent-name>[spurs-all-stats.csv]</parent-name>
+            <remote-alias>TOV</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PF</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[PF]</local-name>
+            <parent-name>[spurs-all-stats.csv]</parent-name>
+            <remote-alias>PF</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PTS</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[PTS]</local-name>
+            <parent-name>[spurs-all-stats.csv]</parent-name>
+            <remote-alias>PTS</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <layout dim-ordering='alphabetic' dim-percentage='0.225806' measure-ordering='alphabetic' measure-percentage='0.774194' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Canada&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>&lt;San Antonio Spurs Franchise Records&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='spurs-all-stats' name='federated.1iyyc061pp3hla1bnek5r0hkgjw7' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1iyyc061pp3hla1bnek5r0hkgjw7'>
+            <column datatype='string' name='[Season]' role='dimension' type='nominal' />
+            <column-instance column='[Season]' derivation='None' name='[none:Season:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols>[federated.1iyyc061pp3hla1bnek5r0hkgjw7].[none:Season:nk]</cols>
+      </table>
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{CFFBA42F-23B1-4C60-925B-28882E289AF8}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1iyyc061pp3hla1bnek5r0hkgjw7].[none:Season:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{85A3FC70-9619-4E82-B901-052C57C2368A}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='384' name='Sheet 1' width='384'>
+      iVBORw0KGgoAAAANSUhEUgAAAYAAAAGACAYAAACkx7W/AAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAAFXUlEQVR4nO3VMQEAIAzAMMC/5yFjRxMF/XpnZg4AOW87AIAdBgAQZQAAUQYAEGUAAFEG
+      ABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAA
+      UQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBl
+      AABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYA
+      EGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABR
+      BgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUA
+      AFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQ
+      ZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEG
+      ABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAA
+      UQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBl
+      AABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYA
+      EGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABR
+      BgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUA
+      AFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQ
+      ZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEG
+      ABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAA
+      UQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBl
+      AABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYA
+      EGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABR
+      BgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUA
+      AFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQ
+      ZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEG
+      ABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAA
+      UQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBl
+      AABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYA
+      EGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEfFxoG/IiMv0YAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='128' name='Sheet 2' width='384'>
+      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
+      gg==
+    </thumbnail>
+  </thumbnails>
+</workbook>
