@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width'>
+    <script src='https://d3js.org/d3.v4.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.24.0/d3-legend.min.js'></script>
+    <script src="https://d3js.org/d3-contour.v1.min.js"></script>
+    <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+
+    <script src='court.js'></script>
+    <script src='shot.js'></script>
+    <script src='slider.js'></script>
+    <script src='table.js'></script>
+    <script src='heatmap.js'></script>
+
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700' rel='stylesheet'>
+    <title>Visualization 3</title>
+    <link rel='stylesheet' href='css/styles.css'>
+</head>
+<body>
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Raleway');
+    body {
+        font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+
+    #court {
+        position: fixed;
+        left: 0px;
+        right: 0px;
+        top: 50px;
+        bottom: 0px;
+    }
+
+    .slider rect {
+        fill: gray;
+        shape-rendering: crispEdges;
+    }
+
+    .slider line {
+        fill: none;
+        stroke: red;
+        opacity: 0.3;
+        shape-rendering: crispEdges;
+    }
+
+</style>
+
+<h2 id='caption'></h2>
+<div id='court'></div>
+<div id='stats'></div>
+<script>
+
+    const margin = { left: 20, right: 20, top: 20, bottom: 20 };
+    var chartDiv = document.getElementById('court');
+    var court = d3.select(chartDiv).append('court').append('svg');
+    court.attr('width', 480)
+        .attr('height', 480/50*47)
+
+    court.append('table');
+
+    var heat_g = court.append('g')
+    var court_g = court.append('g');
+    var title = d3.select(document.getElementById('caption')).append('text');
+    var data_g = d3.select(chartDiv).append('shot').append('svg')
+
+    var slider_axis = court.append('g')
+        .attr('class', 'slider-axis');
+    var slider_rect = court.append('g')
+        .attr('class', 'slider-rect');
+
+    var rect_entity = slider_rect.append('rect');
+
+    const court_xScale = d3.scaleLinear()
+        .domain([-25, 25]);
+    const court_yScale = d3.scaleLinear()
+        .domain([-4,43]);
+    const shot_xScale = d3.scaleLinear()
+        .domain([-250, 250]);
+    const shot_yScale = d3.scaleLinear()
+        .domain([-45,420]);
+
+    var color = d3.scaleSequential(d3.interpolateOrRd)
+        .domain([5e-6, 3e-2]); // Points per square pixel.
+
+
+
+    var Basket = court_g.append('circle');
+    var Backboard = court_g.append('rect');
+    var Outterbox = court_g.append('rect');
+    var Innerbox = court_g.append('rect');
+    var CornerThreeLeft = court_g.append('rect');
+    var CornerThreeRight = court_g.append('rect');
+    var OuterLine = court_g.append('rect');
+    var RestrictedArea = court_g.append('path')
+    var TopFreeThrow = court_g.append('path')
+    var BottomFreeThrow = court_g.append('path')
+    var ThreeLine = court_g.append('path')
+    var CenterOuter = court_g.append('path')
+    var CenterInner = court_g.append('path')
+
+    draw_court();
+    add_shot();
+    Slider();
+    window.addEventListener('resize', draw_court);
+    window.addEventListener('resize', Slider);
+
+
+</script>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+
+<h3>Visualization 3: Tim Duncan's Career Shot Chart</h3>
+<p>This data is supposed to show Tim Duncan's shots made over his career.</p>
+<p>I couldn't get the heat map to work in time but it's supposed to show his shots made during his time with the Spurs.</p>
+<p>Reference: <a href="https://observablehq.com/@youbastard/nba-shot-chart">NBA Shot Chart Tutorial (2018)</a> </p>
+<br/>
+</body>
+</html>
