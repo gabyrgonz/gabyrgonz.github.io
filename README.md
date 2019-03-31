@@ -2,7 +2,7 @@
 ## Gabrielle Gonzaga (UCID: 10100364)
 
 ### Programming Assignment 3: Stream B
-*[Stream B] ()
+* [Stream B] (https://gabyrgonz.github.io/583-pa3)
 
 
 ### San Antonio Spurs At A Glance
