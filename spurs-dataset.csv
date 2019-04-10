@@ -1,4 +1,4 @@
-year_id,date_game,group,variable,seasongame,pts,elo_i,value,win_equiv,opp_id,opp_pts,game_location,game_result
+year_id,date_game,group,variable,seasongame,pts,elo_i,elo,win_equiv,opp_id,opp_pts,game_location,game_result
 2014,10/30/2013,Week 1,1,1,101,1660.6224,1665.2632,56.982845,MEM,94,H,W
 2014,11/1/2013,Week 1,2,2,91,1665.2632,1671.4948,57.533707,LAL,85,A,W
 2014,11/2/2013,Week 1,3,3,105,1671.4948,1656.1182,56.162014,POR,115,A,L
