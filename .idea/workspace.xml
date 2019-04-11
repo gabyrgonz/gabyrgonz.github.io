@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="294a6227-0443-4019-ab51-7fc814c3cfeb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/finalproject.html" beforeDir="false" afterPath="$PROJECT_DIR$/finalproject.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/finalproject.html" beforeDir="false" afterPath="$PROJECT_DIR$/final2014.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -16,11 +16,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/finalproject.html">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/final2014.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="5" column="34" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
+            <state relative-caret-position="367">
+              <caret line="132" lean-forward="true" selection-start-line="132" selection-end-line="132" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/final all.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="745">
+              <caret line="40" column="50" selection-start-line="40" selection-start-column="50" selection-end-line="40" selection-end-column="50" />
             </state>
           </provider>
         </entry>
@@ -37,7 +46,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/visualization3.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2086" />
+            <state relative-caret-position="-732" />
           </provider>
         </entry>
       </file>
@@ -57,6 +66,7 @@
       <find>legend</find>
       <find>gridSize</find>
       <find>value</find>
+      <find>svg</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -67,14 +77,15 @@
       <list>
         <option value="$PROJECT_DIR$/pa3.html" />
         <option value="$PROJECT_DIR$/finalproject.html" />
+        <option value="$PROJECT_DIR$/final all.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1537" />
-    <option name="y" value="23" />
-    <option name="width" value="1021" />
-    <option name="height" value="971" />
+    <option name="x" value="969" />
+    <option name="y" value="35" />
+    <option name="width" value="1280" />
+    <option name="height" value="959" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -129,18 +140,18 @@
       <workItem from="1554063672652" duration="601000" />
       <workItem from="1554069281143" duration="755000" />
       <workItem from="1554794383426" duration="222000" />
-      <workItem from="1554842466539" duration="12970000" />
+      <workItem from="1554842466539" duration="16520000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15281000" />
+    <option name="totallyTimeSpent" value="18831000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1537" y="23" width="1021" height="971" extended-state="0" />
+    <frame x="969" y="35" width="1280" height="959" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.208" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.223193" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -179,7 +190,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/visualization3.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2086" />
+        <state relative-caret-position="-732" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
@@ -189,10 +200,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/finalproject.html">
+    <entry file="file://$PROJECT_DIR$/final2014.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" column="34" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
+        <state relative-caret-position="367">
+          <caret line="132" lean-forward="true" selection-start-line="132" selection-end-line="132" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/final all.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="745">
+          <caret line="40" column="50" selection-start-line="40" selection-start-column="50" selection-end-line="40" selection-end-column="50" />
         </state>
       </provider>
     </entry>
