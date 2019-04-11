@@ -123,6 +123,19 @@ var Scatterplot = function(){
     }
 };
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 var Barchart =  function(){
     this.data;
     this.width;

@@ -3,11 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="294a6227-0443-4019-ab51-7fc814c3cfeb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/d3.v5-9-1.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pa3.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/who.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/world_countries.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/world_population.tsv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/final/final.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/final/tutorial10.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/final/tutorial10.js" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -18,27 +16,36 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DockManager">
+    <window id="2">
+      <content type="file-editors">
+        <state>
+          <leaf>
+            <file pinned="false" current-in-tab="false">
+              <entry file="file://$PROJECT_DIR$/final2014.html">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="131">
+                    <caret line="16" column="7" lean-forward="true" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
+                  </state>
+                </provider>
+              </entry>
+            </file>
+            <file pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/finalall.html">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="-2573">
+                    <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+                  </state>
+                </provider>
+              </entry>
+            </file>
+          </leaf>
+        </state>
+      </content>
+    </window>
+  </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/final2014.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="129" column="30" lean-forward="true" selection-start-line="129" selection-start-column="30" selection-end-line="129" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/finalall.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="36" column="26" lean-forward="true" selection-start-line="36" selection-start-column="26" selection-end-line="36" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -58,6 +65,12 @@
       <find>black</find>
       <find>elementID</find>
       <find>body</find>
+      <find>vis1</find>
+      <find>createCircles</find>
+      <find>xDOmain</find>
+      <find>domain</find>
+      <find>xBins</find>
+      <find>append</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -71,21 +84,23 @@
         <option value="$PROJECT_DIR$/final all.html" />
         <option value="$PROJECT_DIR$/final2014.html" />
         <option value="$PROJECT_DIR$/finalall.html" />
+        <option value="$PROJECT_DIR$/final/finalv1.html" />
+        <option value="$PROJECT_DIR$/final/tutorial10.js" />
+        <option value="$PROJECT_DIR$/final/final.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="365" />
+    <option name="x" value="960" />
     <option name="y" value="23" />
-    <option name="width" value="1073" />
-    <option name="height" value="792" />
+    <option name="width" value="960" />
+    <option name="height" value="972" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -93,10 +108,16 @@
               <item name="gabyrgonz.github.io" type="b2602c69:ProjectViewProjectNode" />
               <item name="gabyrgonz.github.io" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="gabyrgonz.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gabyrgonz.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="final" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -134,17 +155,18 @@
       <workItem from="1554069281143" duration="755000" />
       <workItem from="1554794383426" duration="222000" />
       <workItem from="1554842466539" duration="28920000" />
+      <workItem from="1555017964182" duration="2799000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31231000" />
+    <option name="totallyTimeSpent" value="34030000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="365" y="23" width="1073" height="792" extended-state="0" />
+    <frame x="960" y="23" width="960" height="972" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.223193" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15867944" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -167,20 +189,8 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pa3.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="112" column="42" selection-start-line="112" selection-start-column="42" selection-end-line="112" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/d3.v5-9-1.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" selection-start-line="5" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/pa3.html" />
+    <entry file="file://$PROJECT_DIR$/d3.v5-9-1.js" />
     <entry file="file://$PROJECT_DIR$/visualization3.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-732" />
@@ -193,24 +203,49 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/final all.html">
+    <entry file="file://$PROJECT_DIR$/final all.html" />
+    <entry file="file://$PROJECT_DIR$/final2014.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+        <state relative-caret-position="131">
+          <caret line="16" column="7" lean-forward="true" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/final2014.html">
+    <entry file="file://$PROJECT_DIR$/final/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="129" column="30" lean-forward="true" selection-start-line="129" selection-start-column="30" selection-end-line="129" selection-end-column="30" />
+        <state relative-caret-position="437">
+          <caret line="19" column="21" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="21" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/final/final.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1242">
+          <caret line="67" column="30" lean-forward="true" selection-start-line="67" selection-start-column="30" selection-end-line="67" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/final/tutorial10.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="86" lean-forward="true" selection-start-line="86" selection-end-line="86" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/final/finalv1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="667">
+          <caret line="29" column="21" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/final/tutorial10.css">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/finalall.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="36" column="26" lean-forward="true" selection-start-line="36" selection-start-column="26" selection-end-line="36" selection-end-column="26" />
+        <state relative-caret-position="-2573">
+          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
         </state>
       </provider>
     </entry>
