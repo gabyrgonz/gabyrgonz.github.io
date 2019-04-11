@@ -5,9 +5,9 @@
 <script src="http://d3js.org/d3.v4.js"></script>
 
 <!-- Create a div where the graph will take place -->
-<div>
-    <svg id="my_dataviz" height ="800" width="1000"</div>
-</div>
+
+    <div id="my_dataviz"</div>
+
 <!--<div id="my_dataviz"></div>-->
 
 <!-- Load color palettes -->
@@ -25,7 +25,7 @@
     // set the dimensions and margins of the graph
     var margin = {top: 60, right: 60, bottom: 60, left: 60},
         width = 900 - margin.left - margin.right,
-        height = 500 - margin.top - margin.bottom,
+        height = 600 - margin.top - margin.bottom,
         gridSize = Math.floor(width / 24),
         legendElementWidth = gridSize*2;
 
@@ -39,7 +39,7 @@
             "translate(" + margin.left + "," + margin.top + ")");
 
     //Read the data
-    d3.csv("https://gabyrgonz.github.io/spurs-dataset.csv", function(data) {
+    d3.csv("https://gabyrgonz.github.io/spurs-2014.csv", function(data) {
 
         // every game x every season
         // SPURS-DATA.csv
@@ -85,8 +85,8 @@
             .attr("transform", "translate(0," + height + ")")
             .call(d3.axisBottom(x).tickSize(0))
             .select(".domain").remove()
-            // .selectAll("text")
-            //      .attr("transform", "translate(-10,10)rotate(-45)")
+            .selectAll("text")
+                 .attr("transform", "translate(-10,10)rotate(-45)")
 
         // Build Y scales and axis:
         var y = d3.scaleBand()
@@ -144,9 +144,11 @@
 
         var mousemove = function(d) {
             tooltip
-                .html("ELO Score: " + d.elo)
-                .style("right", (d3.mouse(this)[0]+70) + "px")
-                .style("top", (d3.mouse(this)[1]) + "px")
+            .html("<strong>ELO: </strong> " + d.value +
+                "<br/>" + d.game_result + "\t" + d.pts + "-" + d.opp_pts
+                    + " | " + d.opp_id + "<br/>" + d.date_game)
+            .style("right", (d3.mouse(this)[0]+70) + "px")
+            .style("top", (d3.mouse(this)[1]) + "px")
         }
 
         var mouseleave = function(d) {
@@ -195,6 +197,6 @@
         .style("font-size", "14px")
         .style("fill", "grey")
         .style("max-width", 400)
-        .text("Data Visualization of San Antonio Spurs Playoff Contention");
+        .text("San Antonio Spurs: Every Regular Season Game Ever Played... Until 2015");
 
 </script>
