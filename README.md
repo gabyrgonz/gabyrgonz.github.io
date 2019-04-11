@@ -10,4 +10,4 @@
 * [Visualization 1](https://gabyrgonz.github.io/visualization1)
 * [Visualization 2](https://gabyrgonz.github.io/visualization2)
 * [Visualization 3](https://gabyrgonz.github.io/visualization3)
-* [Final Submission] (https://gabyrgonz.github.io/visualization3)
+* [Final Submission](https://gabyrgonz.github.io/visualization3)
