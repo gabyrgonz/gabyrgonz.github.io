@@ -6,7 +6,10 @@
 <script src="http://d3js.org/d3.v4.js"></script>
 
 <!-- Create a div where the graph will take place -->
-<div id="my_dataviz"></div>
+<div>
+    <svg id="my_dataviz" height ="800" width="1000"</div>
+</div>
+<!--<div id="my_dataviz"></div>-->
 
 <!-- Load color palettes -->
 <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
@@ -20,7 +23,6 @@
 </style>
 
 <script>
-
     // set the dimensions and margins of the graph
     var margin = {top: 60, right: 60, bottom: 60, left: 60},
         width = 900 - margin.left - margin.right,
@@ -84,6 +86,8 @@
             .attr("transform", "translate(0," + height + ")")
             .call(d3.axisBottom(x).tickSize(0))
             .select(".domain").remove()
+            // .selectAll("text")
+            //      .attr("transform", "translate(-10,10)rotate(-45)")
 
         // Build Y scales and axis:
         var y = d3.scaleBand()
@@ -94,6 +98,7 @@
             .style("font-size", 34)
             .call(d3.axisLeft(y).tickSize(0))
             .select(".domain").remove()
+
 
         // add x-axis label
         svg.append("text")
@@ -114,10 +119,32 @@
         // Build color scale
         var myColor = d3.scaleSequential()
             .interpolator(d3.interpolateBuPu)
-            .domain([1630,1770])
+            // .domain([1630,1680,1710,1750,1770]);
+            .domain([1630,1770]);
 
-
-
+        // // add a legend
+        // var size = 20
+        // SVG.selectAll("mydots")
+        //     .data([1630,1770])
+        //     .enter()
+        //     .append("rect")
+        //     .attr("x", 100)
+        //     .attr("y", function(d,i){ return 100 + i*(size+5)}) // 100 is where the first dot appears. 25 is the distance between dots
+        //     .attr("width", size)
+        //     .attr("height", size)
+        //     .style("fill", function(d){ return myColor(d)})
+        //
+        // // Add one dot in the legend for each name.
+        // SVG.selectAll("mylabels")
+        //     .data([1630,1770])
+        //     .enter()
+        //     .append("text")
+        //     .attr("x", 100 + size*1.2)
+        //     .attr("y", function(d,i){ return 100 + i*(size+5) + (size/2)}) // 100 is where the first dot appears. 25 is the distance between dots
+        //     .style("fill", function(d){ return myColor(d)})
+        //     .text(function(d){ return d})
+        //     .attr("text-anchor", "left")
+        //     .style("alignment-baseline", "middle");
 
         // create a tooltip
         var tooltip = d3.select("#my_dataviz")
@@ -140,15 +167,14 @@
                 .style("stroke", "black")
                 .style("opacity", 1)
         }
+
         var mousemove = function(d) {
             tooltip
                 .html("ELO Score: " + d.elo)
                 .style("right", (d3.mouse(this)[0]+70) + "px")
                 .style("top", (d3.mouse(this)[1]) + "px")
-                // .html("Date: " + d.date_game)
-                // .style("left", (d3.mouse(this)[0]+70) + "px")
-                // .style("top", (d3.mouse(this)[1]) + "px")
         }
+
         var mouseleave = function(d) {
             tooltip
                 .style("opacity", 0)
@@ -178,6 +204,7 @@
             .on("mouseleave", mouseleave)
     })
 
+
     // Add title to graph
     svg.append("text")
         .attr("x", 0)
@@ -195,27 +222,5 @@
         .style("fill", "grey")
         .style("max-width", 400)
         .text("Data Visualization of San Antonio Spurs Playoff Contention");
-
-    //
-    // var legend = svg.selectAll(".legend")
-    //     .data([0].concat(colorScale.quantiles()), function(d) { return d; });
-    //
-    // legend.enter().append("g")
-    //     .attr("class", "legend");
-    //
-    // legend.append("rect")
-    //     .attr("x", function(d, i) { return legendElementWidth * i; })
-    //     .attr("y", height)
-    //     .attr("width", legendElementWidth)
-    //     .attr("height", gridSize / 2)
-    //     .style("fill", function(d, i) { return colors[i]; });
-    //
-    // legend.append("text")
-    //     .attr("class", "mono")
-    //     .text(function(d) { return "≥ " + Math.round(d); })
-    //     .attr("x", function(d, i) { return legendElementWidth * i; })
-    //     .attr("y", height + gridSize);
-    //
-    // legend.exit().remove();
 
 </script>
