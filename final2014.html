@@ -121,30 +121,6 @@
             // .domain([1630,1680,1710,1750,1770]);
             .domain([1630,1770]);
 
-        // // add a legend
-        // var size = 20
-        // SVG.selectAll("mydots")
-        //     .data([1630,1770])
-        //     .enter()
-        //     .append("rect")
-        //     .attr("x", 100)
-        //     .attr("y", function(d,i){ return 100 + i*(size+5)}) // 100 is where the first dot appears. 25 is the distance between dots
-        //     .attr("width", size)
-        //     .attr("height", size)
-        //     .style("fill", function(d){ return myColor(d)})
-        //
-        // // Add one dot in the legend for each name.
-        // SVG.selectAll("mylabels")
-        //     .data([1630,1770])
-        //     .enter()
-        //     .append("text")
-        //     .attr("x", 100 + size*1.2)
-        //     .attr("y", function(d,i){ return 100 + i*(size+5) + (size/2)}) // 100 is where the first dot appears. 25 is the distance between dots
-        //     .style("fill", function(d){ return myColor(d)})
-        //     .text(function(d){ return d})
-        //     .attr("text-anchor", "left")
-        //     .style("alignment-baseline", "middle");
-
         // create a tooltip
         var tooltip = d3.select("#my_dataviz")
             .append("div")
@@ -155,7 +131,6 @@
             .style("border-width", "2px")
             .style("border-radius", "5px")
             .style("padding", "5px")
-
 
 
         // Three function that change the tooltip when user hover / move / leave a cell
