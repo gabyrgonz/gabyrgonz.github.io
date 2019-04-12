@@ -5,9 +5,9 @@
 * [Stream B](https://gabyrgonz.github.io/pa3)
 
 
-### San Antonio Spurs At A Glance
+### Final Project
 
 * [Visualization 1](https://gabyrgonz.github.io/visualization1)
 * [Visualization 2](https://gabyrgonz.github.io/visualization2)
 * [Visualization 3](https://gabyrgonz.github.io/visualization3)
-* [Final Submission](https://gabyrgonz.github.io/finalall)
+* [Final Submission](https://gabyrgonz.github.io/finalproject)
