@@ -1,4 +1,4 @@
-﻿<!-- Code from d3-graph-gallery.com -->
+<!-- Code from d3-graph-gallery.com -->
 <!DOCTYPE html>
 <meta charset="utf-8">
 
@@ -7,7 +7,7 @@
 
 <!-- Create a div where the graph will take place -->
 <div id="my_dataviz"></div>
-
+<div id="legend"></div>
 
 <!-- Load color palettes -->
 <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
@@ -24,8 +24,8 @@
 
     // set the dimensions and margins of the graph
     var margin = {top: 60, right: 60, bottom: 60, left: 60},
-        width = 1000 - margin.left - margin.right,
-        height = 900 - margin.top - margin.bottom,
+        width = 1200 - margin.left - margin.right,
+        height = 1000 - margin.top - margin.bottom,
         gridSize = Math.floor(width / 24),
         legendElementWidth = gridSize*2;
 
@@ -84,8 +84,8 @@
         svg.append("g")
             .style("font-size", 36)
             .attr("transform", "translate(0," + height + ")")
-            .call(d3.axisBottom(x).tickSize(0))
-            .select(".domain").remove()
+            .call(d3.axisBottom(x).tickSize(2))
+            .select(".domain")
             .selectAll("text")
                 .attr("transform", "translate(-10,10)rotate(-45)")
 
@@ -96,8 +96,8 @@
             .padding(0.1);
         svg.append("g")
             .style("font-size", 34)
-            .call(d3.axisLeft(y).tickSize(0))
-            .select(".domain").remove()
+            .call(d3.axisLeft(y).tickSize(2))
+            .select(".domain")
 
         // add x-axis label
         svg.append("text")
@@ -121,8 +121,6 @@
             .interpolator(d3.interpolateBuPu)
             //.domain([1270,1772])
             .domain([1270,1772])
-
-
 
 
         // create a tooltip
@@ -164,6 +162,7 @@
         }
 
 
+
         // add the squares
         svg.selectAll()
             .data(data, function(d) {return d.group+':'+d.variable;})
@@ -182,7 +181,32 @@
             .on("mouseover", mouseover)
             .on("mousemove", mousemove)
             .on("mouseleave", mouseleave)
+
+            // list for legend
+            var legend = ["A", "B", "C", "D", "E", "F", "G"]
+            Svg.selectAll("mydots")
+              .data(legend)
+              .enter()
+              .append("circle")
+                .attr("cx", 100)
+                .attr("cy", function(d,i){ return 100 + i*25}) // 100 is where the first dot appears. 25 is the distance between dots
+                .attr("r", 7)
+                .style("fill", function(d){ return color(d)});
+
+            // Add one dot in the legend for each name.
+            Svg.selectAll("mylabels")
+              .data(keys)
+              .enter()
+              .append("text")
+                .attr("x", 120)
+                .attr("y", function(d,i){ return 100 + i*25}) // 100 is where the first dot appears. 25 is the distance between dots
+                .style("fill", function(d){ return color(d)})
+                .text(function(d){ return d})
+                .attr("text-anchor", "left")
+                .style("alignment-baseline", "middle");
+
     })
+
 
     // Add title to graph
     svg.append("text")
@@ -190,10 +214,10 @@
         .attr("y", -30)
         .attr("text-anchor", "left")
         .style("font-size", "26px")
-        .text("San Antonio Spurs: Every Regular Season Game Ever Played... Until 2015");
+        .text("CPSC 583: Final Project");
 
     // Add subtitle to graph
-   /* svg.append("text")
+    svg.append("text")
         .attr("x", 0)
         .attr("y", -10)
         .attr("text-anchor", "left")
@@ -203,7 +227,6 @@
         .text("Data Visualization of San Antonio Spurs Playoff Contention");
 
 
-    */
 
 
 </script>

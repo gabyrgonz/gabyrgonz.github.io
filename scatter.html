@@ -1,0 +1,185 @@
+<!-- Code from d3-graph-gallery.com -->
+<!DOCTYPE html>
+<style>
+    text.mono {
+        font-size: 9pt;
+        font-family: Consolas;
+        fill: #aaa;
+    }
+</style>
+<head>
+    <meta charset="UTF-8">
+    <title>CPSC 583: Final Project</title>
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <script type="text/javascript" src="http://d3js.org/d3.v4.js"></script>
+    <script type="text/javascript" src="final.js"></script>
+    <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script></script>
+
+</head>
+
+<meta charset="utf-8">
+
+<div id="my_dataviz"></div>
+
+
+<body>
+    <p>I created a <a href="https://gabyrgonz.github.io/finalall">another graphic</a> that emulates the same trends... But it's pretty ugly</p><br/>
+    <p><a href ="https://fivethirtyeight.com/features/how-we-calculate-nba-elo-ratings/">Five Thirty Eight</a> determined an NBA team's strength based on a value known as ELO,
+        a measure that is calculated based on game-by-game results. But how does
+        a team increase their Elo value?
+        <ul>
+            <li>The ratings depend on each game's final score, and where it was played</li>
+            <li>Winning games by larger margins and upset wins BUT losing games will decrease their ELO</li>
+            <li>The system is zero-sum during playoff games</li>
+        </ul>
+    </p>
+    <br/>
+    <p>The average ELO rating is ~1500, depending on team expansions.
+        Here's an outline of what these numbers represent: <ul>
+        <li>ELO: 1800, Record: 67-15, All-time great</li>
+        <li>ELO: 1700, Record: 60-22, Title contender</li>
+        <li>ELO: 1600, Record: 51-31, Playoff bound</li>
+        <li>ELO: 1500, Record: 41-41, Average</li>
+        <li>ELO: 1400, Record: 31-51, In the lottery</li>
+        <li>ELO: 1300, Record: 22-60, LOL</li>
+        <li>ELO: 1200, Record: 15-67, Sucks to suck</li></ul>
+
+
+    </p>
+
+<script>
+
+// set the dimensions and margins of the graph
+var margin = {top: 60, right: 30, bottom: 60, left: 90},
+    width = 1100 - margin.left - margin.right,
+    height = 900 - margin.top - margin.bottom;
+
+// append the svg object to the body of the page
+var svg = d3.select("#my_dataviz")
+  .append("svg")
+    .attr("width", width + margin.left + margin.right)
+    .attr("height", height + margin.top + margin.bottom)
+  .append("g")
+    .attr("transform",
+          "translate(" + margin.left + "," + margin.top + ")");
+
+
+//Read the data
+d3.csv("https://gabyrgonz.github.io/ALL-SPURS-DATA.csv", function(data) {
+
+  // Add X axis
+  var x = d3.scaleLinear()
+    .domain([1975, 2018])
+    .range([ 0, width ]);
+ var xAxis = svg.append("g")
+    .attr("transform", "translate(0," + height + ")")
+    .call(d3.axisBottom(x));
+
+  // Add Y axis
+  var y = d3.scaleLinear()
+    .domain([1250, 1790])
+    .range([ height, 0]);
+  var yAxis = svg.append("g")
+    .call(d3.axisLeft(y));
+
+    // add x-axis label
+    svg.append("text")
+        .attr("text-anchor", "end")
+        .attr("x", width - 550)
+        .attr("y", height + margin.top - 20)
+        .text("Season")
+
+    // add y-axis label:
+    svg.append("text")
+        .attr("text-anchor", "end")
+        .attr("transform", "rotate(-90)")
+        .attr("y", -margin.left+40)
+        .attr("x", -margin.top-210)
+        .text("ELO Score")
+
+
+  // Add a tooltip div. Here I define the general feature of the tooltip: stuff that do not depend on the data point.
+  // Its opacity is set to 0: we don't see it by default.
+  var tooltip = d3.select("#my_dataviz")
+    .append("div")
+    .style("opacity", 0)
+    .attr("class", "tooltip")
+    .style("background-color", "white")
+    .style("border", "solid")
+    .style("border-width", "1px")
+    .style("border-radius", "5px")
+    .style("padding", "10px")
+
+
+
+  // A function that change this tooltip when the user hover a point.
+  // Its opacity is set to 1: we can now see it. Plus it set the text and position of tooltip depending on the datapoint (d)
+  var mouseover = function(d) {
+    tooltip
+        .style("opacity", 3)
+            d3.select(this)
+        .style("stroke", "black")
+        .style("opacity", 8)
+  }
+
+  var mousemove = function(d) {
+    tooltip
+      .html("<strong>ELO: </strong> " + d.value +
+          "<br/>Game " + d.variable + " of 82" +
+          "<br/>" + d.game_result + "\t" + d.pts + "-" + d.opp_pts
+              + " | " + d.opp_id + "<br/>" + d.date_game)
+      .style("left", (d3.mouse(this)[0]+90) + "px") // It is important to put the +90: other wise the tooltip is exactly where the point is an it creates a weird effect
+      .style("top", (d3.mouse(this)[1]) + "px")
+  }
+
+  // A function that change this tooltip when the leaves a point: just need to set opacity to 0 again
+  var mouseleave = function(d) {
+      tooltip
+          .style("opacity", 0)
+      d3.select(this)
+          .style("stroke", "none")
+          .style("opacity", 0.5)
+  }
+
+  // Add dots
+  svg.append('g')
+    .selectAll("circle")
+    .data(data)
+    //.data(data.filter(function(d,i){return i<10000})) // the .filter part is just to keep a few dots on the chart, not all of them
+    .enter()
+    .append("circle")
+      .attr("cx", function (d) { return x(d.group); } )
+      .attr("cy", function (d) { return y(d.value); } )
+      .attr("r", 7)
+      .style("fill", function() {
+          return "hsl(" + Math.random() * 360 + ",100%,50%)";
+            })
+      .style("opacity", 0.5)
+      .style("stroke", "white")
+    .on("mouseover", mouseover )
+    .on("mousemove", mousemove )
+    .on("mouseleave", mouseleave )
+
+
+})
+
+// Add title to graph
+svg.append("text")
+    .attr("x", 0)
+    .attr("y", -30)
+    .attr("text-anchor", "left")
+    .style("font-size", "32px")
+    .text("CPSC 583: Final Project");
+
+// Add subtitle to graph
+svg.append("text")
+    .attr("x", 0)
+    .attr("y", -10)
+    .attr("text-anchor", "left")
+    .style("font-size", "18px")
+    .style("fill", "grey")
+    .style("max-width", 400)
+    .text("San Antonio Spurs: Every Regular Season Game Ever Played... Until 2015");
+
+</script>
+</body>
