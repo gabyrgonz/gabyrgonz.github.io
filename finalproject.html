@@ -13,8 +13,7 @@
     <link rel="stylesheet" type="text/css" href="main.css" />
     <script type="text/javascript" src="http://d3js.org/d3.v4.js"></script>
     <script type="text/javascript" src="final.js"></script>
-    <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script></script>
-
+    <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
 </head>
 
 <meta charset="utf-8">
@@ -24,7 +23,7 @@
 
 <body>
     <p>Note: this visualization works best on Firefox and you must "disable protection for now" </p>
-    <p>I created two <a href="https://gabyrgonz.github.io/finalall">other</a> <a href="https://gabyrgonz.github.io/final2014">graphic</a> that emulates the same trends... But it's pretty ugly</p><br/>
+    <p>I created two <a href="https://gabyrgonz.github.io/finalall">other</a> <a href="https://gabyrgonz.github.io/final2014">graphics</a> that emulate the same trends... But they're both pretty ugly</p><br/>
     <p><a href ="https://fivethirtyeight.com/features/how-we-calculate-nba-elo-ratings/">Five Thirty Eight</a> determined an NBA team's strength based on a value known as ELO,
         a measure that is calculated based on game-by-game results. But how does
         a team increase their Elo value?
@@ -72,7 +71,7 @@ d3.csv("https://gabyrgonz.github.io/ALL-SPURS-DATA.csv", function(data) {
   var x = d3.scaleLinear()
     .domain([1975, 2018])
     .range([ 0, width ]);
- var xAxis = svg.append("g")
+  var xAxis = svg.append("g")
     .attr("transform", "translate(0," + height + ")")
     .call(d3.axisBottom(x));
 
@@ -161,6 +160,21 @@ d3.csv("https://gabyrgonz.github.io/ALL-SPURS-DATA.csv", function(data) {
     .on("mousemove", mousemove )
     .on("mouseleave", mouseleave )
 
+    // Add ELO line
+    svg.append('line')
+        .attr('x1', 0)
+        .attr('y1', 420)
+        .attr('x2', 960)
+        .attr('y2', 420)
+        .attr('stroke', 'red')
+
+    // Add ELO text
+    svg.append('text')
+        .attr('x', 880)
+        .attr('y', 410)
+        .attr('stroke', 'red')
+        .style("font-size", 19)
+        .text("ELO average")
 
 })
 
