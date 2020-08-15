@@ -1,5 +1,5 @@
 # CPSC 583: Information Visualization
-## Gabrielle Gonzaga (UCID: 10100364)
+## Gabrielle Gonzaga
 
 ### Programming Assignment 3: Stream B
 * [Stream B](https://gabyrgonz.github.io/pa3)
